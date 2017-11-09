@@ -1,15 +1,28 @@
-.news-post {
-  border-radius: 3px;
-  padding: 12px;
+.NewsPost {
   width: 100%;
+  padding: 12px;
+  margin-top: 10px;
   background-color: #f5f5f5;
 }
 
-.comment-input {
-  border-radius: 3px;
-  border: 1px solid #eee;
-  padding: 2px 3px;
-  font-size: 14px;
-  color: #000;
+.NewsPost__text {
+  margin: 0;
+}
+
+.NewsPost__comments {
+  margin-top: 15px;
+}
+
+.NewsPost__comments:empty {
+  margin-top: 0;
+}
+
+.NewsPost__input {
   width: 100%;
+  height: 46px;
+  padding: 0 10px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  color: #4a4a4a;
+  font-size: 18px;
 }

@@ -1,3 +1,25 @@
+.Comment {
+  display: flex;
+  align-items: baseline;
+  border-top: 1px dashed #ccc;
+  color: #777;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.Comment__text {
+  width: calc(100% - 20px);
+}
+
+.Comment__delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+}
+
 .delete {
   color: red;
   margin-left: 8px;
