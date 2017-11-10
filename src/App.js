@@ -28,7 +28,10 @@ class App extends PureComponent {
   handleKeyDown = e => {
     if (e.keyCode === 13) {
       const {newsInput, news} = this.state;
-      const newNewsPost = {text: newsInput};
+      const newNewsPost = {
+        id: getNewsPostId(),
+        text: newsInput
+      };
 
       this.setState({
         newsInput: '', 
@@ -54,7 +57,7 @@ class App extends PureComponent {
         <div className="App__news-list">
           {news.map(newsPost => (
             <NewsPost
-              key={newsPost.text}
+              key={newsPost.id}
               text={newsPost.text}
             />
           ))}
