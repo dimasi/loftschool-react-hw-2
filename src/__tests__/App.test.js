@@ -49,7 +49,7 @@ describe('App component', () => {
       wrapper.update();
       wrapper.find('input').simulate('keyDown', {keyCode: 13});
       expect(wrapper.state().newsInput).toEqual('');
-      expect(wrapper.state().news).toEqual([{text: 10}]);
+      expect(wrapper.state().news[0].text).toEqual(10);
     });
   });
 

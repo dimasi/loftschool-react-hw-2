@@ -21,7 +21,7 @@ describe('Comment component', () => {
   });
 
   describe('test callbacks', () => {
-    it('call callback handleDelete on click', () => {
+    it('call callback onDelete on click', () => {
       wrapper.find('span.delete').simulate('click');
       expect(onDeleteMock).toHaveBeenCalledTimes(1);
     });
@@ -33,7 +33,7 @@ describe('Comment component', () => {
   });
 
   describe('check presence of instance methods', () => {
-    it('have onDelete method', () => {
+    it('have handleDelete method', () => {
       expect(wrapper.instance().handleDelete).toBeDefined();
     });
   });

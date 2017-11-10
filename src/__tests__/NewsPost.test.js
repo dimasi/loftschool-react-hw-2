@@ -57,7 +57,7 @@ describe('NewsPost component', () => {
       wrapper.update();
       wrapper.find('input').simulate('keyDown', {keyCode: 13});
       expect(wrapper.state().commentInput).toEqual('');
-      expect(wrapper.state().comments).toEqual([{id: 1, text: 10}]);
+      expect(wrapper.state().comments[0].text).toEqual(10);
     });
     it('delete comment on call handleDelete', () => {
       const wrapper = shallow(<NewsPost id={1} text={'test'} />);
